@@ -8,7 +8,7 @@ for (int i = 0; i < s.length(); i++)
     if (s[i] == '(' || s[i] == '[' || s[i] == '{') opens.push_back(s[i]);
     else 
     {
-        if (opens.size() == 0) return false;
+        if (opens.empty()) return false;
         if (s[i] == ')')
         {
             if (opens.back() == '(') opens.pop_back();
